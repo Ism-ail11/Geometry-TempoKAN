@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geometry TempoKAN results</title><style>
+:root{color-scheme:light;--ink:#172b45;--muted:#52677e;--teal:#087e77;--grid:#d8e4ef;--soft:#e8f6f4}
+*{box-sizing:border-box}body{margin:0;background:#f2f6fa;color:var(--ink);font:16px/1.6 ui-sans-serif,system-ui}
+main{max-width:1150px;margin:0 auto;background:white}header{background:#172b45;color:white;padding:53px 6% 40px}
+h1{font-size:clamp(34px,5vw,58px);letter-spacing:-.045em;line-height:1.1;margin:0}
+header p{color:#d9e8f0;margin:14px 0 0;max-width:740px}nav{padding:14px 6%;display:flex;gap:12px 25px;flex-wrap:wrap;background:#edf5f7}
+a{color:#126868;font-weight:650}section{padding:0 6% 28px}h2{font-size:27px;margin:30px 0 8px;letter-spacing:-.03em}
+p{margin:9px 0 15px}.note{color:var(--muted);font-size:13px}
+.scroll{overflow-x:auto;border:1px solid var(--grid);border-radius:9px;margin:14px 0 7px}
+table{border-collapse:collapse;width:100%;min-width:660px;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{text-align:right;border-bottom:1px solid #edf2f7;padding:10px 13px}
+th{background:#edf3f8}th:first-child,td:first-child{text-align:left}tbody tr:nth-child(even){background:#f9fbfd}
+tbody tr.emphasis{background:var(--soft);font-weight:700}
+figure{padding:10px;margin:14px 0 22px;border:1px solid var(--grid);border-radius:9px}
+figure img{width:100%;display:block}figcaption{padding:8px 10px;color:var(--muted);font-size:13px}
+ul{padding-left:22px}.links a{margin-right:12px}.section-end{padding-bottom:36px}
+</style></head>
+<body><main>
+<header><h1>Geometry TempoKAN</h1><p>Participant-disjoint activity recognition on UCI HAR, PAMAP2, and SELFBACK.</p></header>
+<nav aria-label="Results sections"><a href="#benchmark">Benchmark</a><a href="#ablations">Ablations</a>
+<a href="#stress">Stress tests</a><a href="#calibration">Calibration</a>
+<a href="#figures">Figures</a><a href="#files">Data and tables</a></nav>
+<section id="benchmark">
+<h2>Matched benchmark</h2>
+<p>345 completed fits, including 152 independent baseline fits.
+All nine models use the same participant splits with training seeds 42 and 77.</p>
+<div class='scroll'><table><thead><tr><th scope='col'>Model</th><th scope='col'>UCI HAR clean</th><th scope='col'>PAMAP2 clean</th><th scope='col'>SELFBACK clean</th><th scope='col'>SELFBACK unseen pace</th></tr></thead><tbody><tr class='emphasis'><td>Geometry TempoKAN</td><td>95.50% [90.61, 99.06]</td><td>88.73% [85.12, 91.47]</td><td>92.23% [89.27, 94.92]</td><td>90.91% [88.63, 93.11]</td></tr><tr><td>Temporal CNN</td><td>94.66% [88.54, 98.98]</td><td>82.74% [72.82, 89.42]</td><td>91.71% [88.51, 94.67]</td><td>90.22% [87.58, 92.60]</td></tr><tr><td>KAN-HAR</td><td>86.48% [79.27, 92.06]</td><td>86.66% [83.17, 89.57]</td><td>85.78% [82.49, 89.12]</td><td>87.04% [83.83, 90.00]</td></tr><tr><td>RL-KAN feature extractor</td><td>89.26% [83.05, 94.23]</td><td>87.43% [84.31, 90.07]</td><td>91.08% [88.19, 93.65]</td><td>89.42% [86.63, 91.91]</td></tr><tr><td>KAN–MLP–Mixer</td><td>91.10% [83.18, 96.69]</td><td>87.34% [84.88, 89.46]</td><td>91.59% [89.09, 93.87]</td><td>89.75% [86.74, 92.37]</td></tr><tr><td>Original-axis features</td><td>94.72% [89.16, 98.91]</td><td>88.38% [84.13, 91.33]</td><td>92.30% [89.43, 94.98]</td><td>90.81% [88.12, 93.16]</td></tr><tr><td>Geometry · MLP readouts</td><td>96.23% [92.20, 99.16]</td><td>89.66% [87.24, 91.68]</td><td>91.02% [87.81, 93.89]</td><td>90.68% [88.03, 92.98]</td></tr><tr><td>Without posture head</td><td>92.12% [85.80, 97.08]</td><td>86.24% [81.21, 89.87]</td><td>91.45% [88.39, 94.17]</td><td>91.80% [89.15, 94.01]</td></tr><tr><td>Without mounting augmentation</td><td>93.58% [86.35, 98.83]</td><td>86.52% [81.50, 90.23]</td><td>90.94% [87.53, 93.89]</td><td>89.74% [86.81, 92.18]</td></tr></tbody></table></div>
+<p class="note">Cells give macro-F1 with 95% participant-bootstrap intervals in percent. Each participant’s
+confusion matrices are averaged across the two seeds before scoring. Unseen pace averages slow and fast macro-F1
+with the same nonwalking windows in each condition.</p>
+<h3>Paired baseline differences</h3>
+<div class='scroll'><table><thead><tr><th scope='col'>Comparison</th><th scope='col'>UCI HAR clean</th><th scope='col'>PAMAP2 clean</th><th scope='col'>SELFBACK clean</th><th scope='col'>SELFBACK unseen pace</th></tr></thead><tbody><tr><td>Temporal CNN</td><td>+0.84 [-0.39, +2.52]</td><td>+6.00 [+1.90, +12.53]</td><td>+0.52 [-0.32, +1.36]</td><td>+0.69 [-0.49, +1.91]</td></tr><tr><td>KAN-HAR</td><td>+9.02 [+6.25, +12.06]</td><td>+2.07 [+1.45, +3.10]</td><td>+6.45 [+3.79, +9.33]</td><td>+3.87 [+1.71, +6.24]</td></tr><tr><td>RL-KAN feature extractor</td><td>+6.24 [+3.99, +8.83]</td><td>+1.30 [+0.13, +2.58]</td><td>+1.15 [-0.09, +2.41]</td><td>+1.49 [-0.14, +3.05]</td></tr><tr><td>KAN–MLP–Mixer</td><td>+4.40 [+2.20, +7.40]</td><td>+1.39 [-0.41, +3.00]</td><td>+0.63 [-0.93, +2.05]</td><td>+1.16 [-0.52, +3.00]</td></tr></tbody></table></div>
+<p class="note">Cells give Geometry TempoKAN minus the comparator in macro-F1 percentage points, with paired
+95% participant intervals. Each draw resamples participants jointly across the models.</p>
+<p><a href="Benchmark/Matched_Seeds.csv">Matched-seed benchmark and seed ranges</a> ·
+<a href="Benchmark/Matched_Seed_Effects.csv">Paired baseline CSV</a> ·
+<a href="Benchmark/Participant_Scores.csv">Participant-level scores</a> ·
+<a href="Benchmark/Resources.csv">Model size and compute</a> · <a href="../Baselines/README.md">Source studies and adaptations</a></p>
+</section>
+<section id="ablations">
+<h2>Controlled ablations</h2>
+<p>Each control changes one part of the Geometry model or its training recipe. The posture-head removal
+also reduces capacity.</p>
+<div class='scroll'><table><thead><tr><th scope='col'>Comparison</th><th scope='col'>UCI HAR clean</th><th scope='col'>PAMAP2 clean</th><th scope='col'>SELFBACK clean</th><th scope='col'>SELFBACK unseen pace</th></tr></thead><tbody><tr><td>Original-axis features</td><td>+0.78 [+0.12, +1.64]</td><td>+0.35 [-0.23, +1.07]</td><td>-0.07 [-0.35, +0.29]</td><td>+0.10 [-0.99, +1.23]</td></tr><tr><td>Geometry · MLP readouts</td><td>-0.73 [-2.14, +0.40]</td><td>-0.93 [-2.28, +0.17]</td><td>+1.21 [+0.15, +2.27]</td><td>+0.23 [-0.95, +1.49]</td></tr><tr><td>Without posture head</td><td>+3.38 [+1.54, +5.36]</td><td>+2.49 [+1.31, +4.13]</td><td>+0.78 [+0.22, +1.61]</td><td>-0.89 [-2.03, +0.13]</td></tr><tr><td>Without mounting augmentation</td><td>+1.91 [+0.21, +4.37]</td><td>+2.21 [+0.57, +3.98]</td><td>+1.29 [+0.28, +2.36]</td><td>+1.17 [-0.47, +2.83]</td></tr></tbody></table></div>
+<p class="note">Cells give Geometry TempoKAN minus the named control in macro-F1 percentage points,
+with paired 95% participant intervals. All ablations share the same two training seeds and held-out windows.</p>
+<p><a href="Ablations/Matched_Seed_Effects.csv">Two-seed ablation effects</a> ·
+<a href="Ablations/Rotation_Effects.csv">Rotation-specific ablation effects</a> ·
+<a href="../Proposed_Method/README.md">Components tested</a></p>
+</section>
+<section id="stress">
+<h2>Stress tests</h2>
+<p>351 dataset–model–severity estimates measure missing samples, Gaussian noise, and
+joint sensor loss and mounting rotation on clean-protocol held-out participants. The table shows Geometry TempoKAN
+at the highest tested severity in each sweep, with changes from its own clean score.</p>
+<div class='scroll'><table><thead><tr><th scope='col'>Dataset and condition</th><th scope='col'>Clean macro-F1</th><th scope='col'>Stressed macro-F1</th><th scope='col'>Change · pp (95% interval)</th></tr></thead><tbody><tr><td>UCI HAR · 25% window interpolated</td><td>95.35%</td><td>94.24%</td><td>-1.11 [-1.98, -0.42]</td></tr><tr><td>UCI HAR · Gaussian noise at 0.35× channel SD</td><td>95.35%</td><td>87.92%</td><td>-7.43 [-9.55, -5.17]</td></tr><tr><td>UCI HAR · 60° rotation with one sensor group absent</td><td>95.35%</td><td>47.02%</td><td>-48.34 [-63.46, -34.20]</td></tr><tr><td>PAMAP2 · 25% window interpolated</td><td>88.39%</td><td>87.10%</td><td>-1.30 [-2.21, -0.51]</td></tr><tr><td>PAMAP2 · Gaussian noise at 0.35× channel SD</td><td>88.39%</td><td>63.85%</td><td>-24.55 [-30.25, -20.13]</td></tr><tr><td>PAMAP2 · 60° rotation with one sensor group absent</td><td>88.39%</td><td>55.59%</td><td>-32.80 [-40.07, -25.14]</td></tr><tr><td>SELFBACK · 25% window interpolated</td><td>92.31%</td><td>88.73%</td><td>-3.58 [-4.45, -2.74]</td></tr><tr><td>SELFBACK · Gaussian noise at 0.35× channel SD</td><td>92.31%</td><td>90.50%</td><td>-1.81 [-2.93, -0.68]</td></tr><tr><td>SELFBACK · 60° rotation with one sensor group absent</td><td>92.31%</td><td>54.25%</td><td>-38.06 [-43.12, -32.73]</td></tr></tbody></table></div>
+<p class="note">All extended simulation sweeps use seed 42. Sensor loss removes a complete IMU on PAMAP2 and one
+three-axis sensor group on UCI HAR and SELFBACK. Zero degrees in the joint sweep still includes the sensor outage.
+The rotation–outage contrast measures how much the joint macro-F1 change departs from adding the two single-stress changes.</p>
+<p><a href="Robustness/Stress_Sweeps.csv">All models and severity levels</a> ·
+<a href="Robustness/Stress_Paired_Effects.csv">Paired stress-test effects</a> ·
+<a href="Robustness/Rotation_Outage_Interaction.csv">Rotation and outage contrasts</a> ·
+<a href="Diagnostics/Stress_Per_Class.csv">Per-activity changes at the highest severity</a> ·
+<a href="Robustness/Matched_Pace.csv">Measured walking recall and pace errors</a> ·
+<a href="Robustness/Matched_Corruptions.csv">Two-seed corruption estimates</a></p>
+</section>
+<section id="calibration">
+<h2>Confidence and selective prediction</h2>
+<p>These rows compare Geometry TempoKAN’s confidence with observed correctness. The threshold table records
+coverage and error among accepted predictions for all nine models.</p>
+<div class='scroll'><table><thead><tr><th scope='col'>Test context</th><th scope='col'>Seed</th><th scope='col'>Top-label accuracy</th><th scope='col'>Mean confidence</th><th scope='col'>ECE</th><th scope='col'>Top-label Brier</th></tr></thead><tbody><tr><td>UCI HAR · clean</td><td>42</td><td>95.28%</td><td>94.11%</td><td>1.52%</td><td>0.0325</td></tr><tr><td>UCI HAR · clean</td><td>77</td><td>95.66%</td><td>94.99%</td><td>1.50%</td><td>0.0288</td></tr><tr><td>PAMAP2 · clean</td><td>42</td><td>88.39%</td><td>87.98%</td><td>1.20%</td><td>0.0760</td></tr><tr><td>PAMAP2 · clean</td><td>77</td><td>89.13%</td><td>87.16%</td><td>2.12%</td><td>0.0688</td></tr><tr><td>SELFBACK · clean</td><td>42</td><td>93.56%</td><td>94.86%</td><td>1.69%</td><td>0.0509</td></tr><tr><td>SELFBACK · clean</td><td>77</td><td>93.41%</td><td>95.27%</td><td>2.19%</td><td>0.0531</td></tr><tr><td>SELFBACK · unseen pace</td><td>42</td><td>91.41%</td><td>92.59%</td><td>1.92%</td><td>0.0670</td></tr><tr><td>SELFBACK · unseen pace</td><td>77</td><td>89.72%</td><td>92.75%</td><td>3.41%</td><td>0.0796</td></tr></tbody></table></div>
+<p class="note">Expected calibration error (ECE) uses ten equal-width bins. The top-label Brier score measures
+squared error between the predicted label’s confidence and its correctness. Unseen pace pools slow and fast
+walking with each nonwalking window counted once.</p>
+<p><a href="Diagnostics/Calibration.csv">All 126 calibration contexts</a> ·
+<a href="Diagnostics/Reliability_Bins.csv">Reliability bins</a> ·
+<a href="Diagnostics/Risk_Coverage.csv">All 756 confidence-threshold results</a></p>
+</section>
+<section id="figures"><h2>Composite figures</h2><figure><img src='Figures/01_Learning_Curves.svg' alt='Validation learning curves across the four split protocols.'><figcaption>Validation learning curves across the four split protocols. <a href='Figures/01_Learning_Curves.pdf'>PDF</a> · <a href='Figures/01_Learning_Curves.png'>PNG</a> · <a href='Figures/01_Learning_Curves.svg'>SVG</a></figcaption></figure>
+<figure><img src='Figures/02_Robustness_Curves.svg' alt='Mounting rotation, sensor loss, missing samples, Gaussian noise, and recorded pace.'><figcaption>Mounting rotation, sensor loss, missing samples, Gaussian noise, and recorded pace. <a href='Figures/02_Robustness_Curves.pdf'>PDF</a> · <a href='Figures/02_Robustness_Curves.png'>PNG</a> · <a href='Figures/02_Robustness_Curves.svg'>SVG</a></figcaption></figure>
+<figure><img src='Figures/03_Confusion_Matrices.svg' alt='Row-normalized confusion matrices for Geometry TempoKAN.'><figcaption>Row-normalized confusion matrices for Geometry TempoKAN. <a href='Figures/03_Confusion_Matrices.pdf'>PDF</a> · <a href='Figures/03_Confusion_Matrices.png'>PNG</a> · <a href='Figures/03_Confusion_Matrices.svg'>SVG</a></figcaption></figure>
+<figure><img src='Figures/04_Benchmark_Bar_Chart.svg' alt='Held-out macro-F1 with participant intervals. Each panel uses the same comparisons.'><figcaption>Held-out macro-F1 with participant intervals. Each panel uses the same comparisons. <a href='Figures/04_Benchmark_Bar_Chart.pdf'>PDF</a> · <a href='Figures/04_Benchmark_Bar_Chart.png'>PNG</a> · <a href='Figures/04_Benchmark_Bar_Chart.svg'>SVG</a></figcaption></figure></section>
+<section id="files" class="section-end">
+<h2>Data and tables</h2>
+<ul>
+<li><a href="../Datasets/Splits.csv">Participant split assignments</a></li>
+<li><a href="Benchmark/Scores.csv">Seed-42 benchmark including the checkpoint average</a> and
+<a href="Benchmark/Seed_Replicates.csv">per-seed results</a></li>
+<li><a href="Robustness/Rotation.csv">Rotation performance</a></li>
+<li><a href="Diagnostics/Matched_Confusions.csv">Two-seed confusion matrices</a> and
+<a href="Diagnostics/Matched_Per_Class.csv">per-class precision, recall, and F1</a></li>
+<li><a href="Diagnostics/Participant_Variability.csv">Participant-level score distributions</a> and
+<a href="Diagnostics/Seed_Agreement.csv">Prediction agreement between seeds</a></li>
+<li><a href="Training/Epoch_History.csv">Per-fold learning curves</a> and
+<a href="Execution/Manifest.json">executed configuration manifest</a></li>
+</ul>
+</section></main></body></html>

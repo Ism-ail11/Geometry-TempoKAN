@@ -1,0 +1,313 @@
+dataset,regime,model,method,seed_count,seeds,folds,test_participants,family,level,delta_pp,low_pp,high_pp
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,sample_gap,0,0.7938794,0.087866112,1.6406613
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,sample_gap,0,-1.2259548,-3.3433685,0.42613287
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,sample_gap,0,3.3228415,1.2180005,5.4041088
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,sample_gap,0,1.9315386,0.32855028,4.2755982
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,sample_gap,0,0.8051914,-0.30710623,2.1932792
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,sample_gap,0,8.8623793,5.7302548,12.22559
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,sample_gap,0,5.9404153,3.9905931,8.2308987
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,sample_gap,0,4.9942637,2.0127178,9.0322462
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,sample_gap,8,0.75191702,-0.0366524,1.6389209
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,sample_gap,8,-1.3714443,-3.3475018,0.15754802
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,sample_gap,8,3.1448065,1.0207428,5.196364
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,sample_gap,8,1.6815589,0.15601077,3.7708308
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,sample_gap,8,0.62727908,-0.40273724,1.8394012
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,sample_gap,8,8.8655346,5.874381,11.99759
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,sample_gap,8,5.799473,3.6788559,8.2491126
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,sample_gap,8,4.8502861,2.0103487,8.7070294
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,sample_gap,16,0.61962311,-0.035538675,1.5768978
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,sample_gap,16,-1.3716797,-3.1293997,0.051516951
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,sample_gap,16,3.2762187,1.2532431,5.3153274
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,sample_gap,16,1.6127018,0.3149416,3.3819449
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,sample_gap,16,0.55905802,-0.64976077,1.8554014
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,sample_gap,16,9.9654843,7.1721512,12.828365
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,sample_gap,16,6.4839256,4.1563989,9.052524
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,sample_gap,16,4.8229338,2.0850142,8.4554797
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,sample_gap,32,0.7540422,-0.40211619,2.3499975
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,sample_gap,32,-0.76175525,-2.3498932,0.53029996
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,sample_gap,32,3.1294577,1.2372833,4.9863657
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,sample_gap,32,1.7397412,0.012830993,3.9691811
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,sample_gap,32,0.71616254,-0.45233928,2.0600948
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,sample_gap,32,10.995932,8.376733,13.548811
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,sample_gap,32,8.9127261,6.0981884,11.80268
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,sample_gap,32,5.9292854,3.111187,9.5948724
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,gaussian_noise,0,0.7938794,0.087866112,1.6406613
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,gaussian_noise,0,-1.2259548,-3.3433685,0.42613287
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,gaussian_noise,0,3.3228415,1.2180005,5.4041088
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,gaussian_noise,0,1.9315386,0.32855028,4.2755982
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,gaussian_noise,0,0.8051914,-0.30710623,2.1932792
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,gaussian_noise,0,8.8623793,5.7302548,12.22559
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,gaussian_noise,0,5.9404153,3.9905931,8.2308987
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,gaussian_noise,0,4.9942637,2.0127178,9.0322462
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,gaussian_noise,0.05,-0.021575749,-0.65596774,0.50819147
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,gaussian_noise,0.05,0.44240555,-0.79622409,1.4031147
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,gaussian_noise,0.05,1.998496,-0.036703337,4.1267365
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,gaussian_noise,0.05,1.4052819,-0.3583497,3.7079509
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,gaussian_noise,0.05,0.26370138,-1.152546,1.8983579
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,gaussian_noise,0.05,7.6427173,4.8080116,10.899949
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,gaussian_noise,0.05,4.4764095,2.9271646,6.2264011
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,gaussian_noise,0.05,3.6716178,0.35413348,7.9959696
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,gaussian_noise,0.1,-0.42894059,-1.3130805,0.32558305
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,gaussian_noise,0.1,0.017588217,-1.0552333,0.81187426
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,gaussian_noise,0.1,-0.15514641,-2.0462341,1.5603625
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,gaussian_noise,0.1,0.11242172,-1.6000986,2.4090481
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,gaussian_noise,0.1,-0.90204252,-2.4742242,0.97240164
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,gaussian_noise,0.1,5.473749,2.7546429,9.0127328
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,gaussian_noise,0.1,2.1015248,0.075053806,4.3349105
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,gaussian_noise,0.1,1.4698081,-1.9972653,5.8542564
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,gaussian_noise,0.2,-0.43839256,-1.1602514,0.20090287
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,gaussian_noise,0.2,-0.055868774,-1.0192377,0.84260069
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,gaussian_noise,0.2,-0.65820578,-2.3194398,0.9345791
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,gaussian_noise,0.2,-0.79994957,-2.7833584,1.3798153
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,gaussian_noise,0.2,0.47683126,-1.1891474,2.3158256
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,gaussian_noise,0.2,5.0435741,2.0768831,8.6911772
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,gaussian_noise,0.2,1.2251805,-0.85877539,3.4221469
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,gaussian_noise,0.2,0.29976494,-3.1867869,4.7862189
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,gaussian_noise,0.35,-2.0709736,-3.0920009,-0.90179231
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,gaussian_noise,0.35,3.7108442,2.0126527,5.1026288
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,gaussian_noise,0.35,-2.6354254,-3.9896047,-1.1702275
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,gaussian_noise,0.35,-0.59542241,-3.0933155,1.9855287
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,gaussian_noise,0.35,11.355707,7.6088647,15.512061
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,gaussian_noise,0.35,22.396032,20.504887,24.384183
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,gaussian_noise,0.35,11.919372,8.0862854,15.504515
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,gaussian_noise,0.35,9.0495266,6.0210425,12.561324
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,rotation_with_outage,0,1.4130774,0.48876747,2.4738221
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,rotation_with_outage,0,0.95333351,-0.55004861,2.2440983
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,rotation_with_outage,0,6.6027779,2.6523292,10.274072
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,rotation_with_outage,0,2.8579554,1.2138315,4.797397
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,rotation_with_outage,0,-0.41294755,-1.7656623,1.0195169
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,rotation_with_outage,0,16.589869,12.425072,20.944427
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,rotation_with_outage,0,10.824586,6.8309707,15.053202
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,rotation_with_outage,0,9.3224404,5.6090984,14.560025
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,rotation_with_outage,15,1.6963683,-0.69881634,3.8563594
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,rotation_with_outage,15,0.18050307,-3.3352349,2.8822764
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,rotation_with_outage,15,9.992157,4.7766728,15.69236
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,rotation_with_outage,15,6.7162325,2.6120212,11.472927
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,rotation_with_outage,15,-2.1412793,-5.7456783,0.95197313
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,rotation_with_outage,15,16.407968,9.6075747,23.483398
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,rotation_with_outage,15,13.760094,6.8064516,21.57704
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,rotation_with_outage,15,10.768498,4.4798029,18.1759
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,rotation_with_outage,30,-0.33489988,-2.8550722,2.2136273
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,rotation_with_outage,30,-1.5946641,-5.4520219,1.8857687
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,rotation_with_outage,30,7.9500417,2.5984517,12.968983
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,rotation_with_outage,30,6.0340342,2.0921432,10.423978
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,rotation_with_outage,30,0.76162368,-4.0926765,5.3013985
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,rotation_with_outage,30,14.43415,6.8413079,22.385124
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,rotation_with_outage,30,14.712086,8.1116429,21.084349
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,rotation_with_outage,30,11.249805,5.5867507,18.335381
+uci_har,clean,geometry_axes,Original-axis features,1,42,1,9,rotation_with_outage,60,0.83882538,-2.0703894,4.5509403
+uci_har,clean,geometry_mlp,Geometry · MLP readouts,1,42,1,9,rotation_with_outage,60,-3.9797588,-9.8683871,2.0811302
+uci_har,clean,geometry_no_posture,Without posture head,1,42,1,9,rotation_with_outage,60,5.8897584,0.45368574,11.322438
+uci_har,clean,geometry_no_rotation,Without mounting augmentation,1,42,1,9,rotation_with_outage,60,4.8913166,-0.67915017,12.658237
+uci_har,clean,temporal_cnn,Temporal CNN,1,42,1,9,rotation_with_outage,60,0.85651718,-2.2887278,3.7394945
+uci_har,clean,kan_har,KAN-HAR,1,42,1,9,rotation_with_outage,60,12.997708,3.2081878,23.018243
+uci_har,clean,kan_fe,RL-KAN feature extractor,1,42,1,9,rotation_with_outage,60,12.763838,2.803619,22.891645
+uci_har,clean,kan_mixer,KAN–MLP–Mixer,1,42,1,9,rotation_with_outage,60,10.507713,2.8835748,18.65737
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,sample_gap,0,0.88201584,-0.14382868,2.4828002
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,sample_gap,0,-1.6055293,-4.3336556,0.20586334
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,sample_gap,0,2.259511,0.69073093,4.1684149
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,sample_gap,0,2.6014861,0.96107005,4.1861341
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,sample_gap,0,6.082671,2.0833173,12.086225
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,sample_gap,0,1.7003989,0.31519483,3.1928839
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,sample_gap,0,0.86428229,-1.9821721,3.3564457
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,sample_gap,0,0.94898047,-2.3458137,3.3734349
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,sample_gap,8,0.78211031,-0.16932659,2.2283731
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,sample_gap,8,-1.8620965,-4.6702811,0.044168008
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,sample_gap,8,1.9847709,0.50220969,3.8126869
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,sample_gap,8,2.4386154,0.79585204,4.0219276
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,sample_gap,8,6.0018621,1.9704592,12.064044
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,sample_gap,8,1.4721695,-0.15286168,3.1422487
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,sample_gap,8,0.75292761,-1.9759833,3.1751276
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,sample_gap,8,0.8001713,-2.5491924,3.3519836
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,sample_gap,16,0.71028925,-0.1931236,2.0736471
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,sample_gap,16,-1.7941967,-4.5617385,0.093405582
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,sample_gap,16,1.8883894,0.46634976,3.6896599
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,sample_gap,16,2.5856621,0.76961678,4.3070782
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,sample_gap,16,5.8286222,1.7462606,11.926191
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,sample_gap,16,1.67178,0.2376306,3.2535824
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,sample_gap,16,1.1722804,-1.5000321,3.7332278
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,sample_gap,16,0.84909097,-2.2932053,3.3564005
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,sample_gap,32,0.69968211,-0.30694753,2.0434476
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,sample_gap,32,-1.7162859,-4.5233053,0.19447034
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,sample_gap,32,1.8599662,0.39898096,3.5376302
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,sample_gap,32,2.9411705,0.99206974,4.7380012
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,sample_gap,32,5.9768689,1.9439358,12.472415
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,sample_gap,32,2.4393263,1.0065689,4.1096027
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,sample_gap,32,2.0647726,-0.59600189,4.8274734
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,sample_gap,32,0.8934556,-2.5014217,3.8063676
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,gaussian_noise,0,0.88201584,-0.14382868,2.4828002
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,gaussian_noise,0,-1.6055293,-4.3336556,0.20586334
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,gaussian_noise,0,2.259511,0.69073093,4.1684149
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,gaussian_noise,0,2.6014861,0.96107005,4.1861341
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,gaussian_noise,0,6.082671,2.0833173,12.086225
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,gaussian_noise,0,1.7003989,0.31519483,3.1928839
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,gaussian_noise,0,0.86428229,-1.9821721,3.3564457
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,gaussian_noise,0,0.94898047,-2.3458137,3.3734349
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,gaussian_noise,0.05,0.76253216,-0.30263798,2.4247174
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,gaussian_noise,0.05,-1.2565258,-3.2149874,0.28708791
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,gaussian_noise,0.05,1.9749016,0.21601144,4.036637
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,gaussian_noise,0.05,2.8082294,0.75651442,4.763177
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,gaussian_noise,0.05,5.4171932,1.3112449,11.397282
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,gaussian_noise,0.05,0.99906119,-0.23549408,2.3418478
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,gaussian_noise,0.05,0.20739602,-2.4871561,2.6231362
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,gaussian_noise,0.05,0.24042634,-2.8572793,2.3702223
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,gaussian_noise,0.1,0.7020018,-0.62798761,2.585626
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,gaussian_noise,0.1,-0.3809149,-2.5059174,1.9075171
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,gaussian_noise,0.1,2.7907333,0.013066044,6.1294411
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,gaussian_noise,0.1,3.7215765,0.72873517,7.3048891
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,gaussian_noise,0.1,4.1577863,-0.39992475,10.101397
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,gaussian_noise,0.1,-0.43098997,-2.4086826,1.6755212
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,gaussian_noise,0.1,-1.1378532,-4.202761,1.5635263
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,gaussian_noise,0.1,-1.0904078,-4.597206,1.4229032
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,gaussian_noise,0.2,1.2427429,0.29247552,2.3603697
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,gaussian_noise,0.2,-1.2847512,-6.513857,3.2254383
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,gaussian_noise,0.2,0.55192085,-2.1383373,3.0558914
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,gaussian_noise,0.2,2.2819777,0.24411507,4.7758944
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,gaussian_noise,0.2,-2.7387185,-7.847153,1.9724915
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,gaussian_noise,0.2,-8.4363471,-12.57759,-4.0141793
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,gaussian_noise,0.2,-8.6884722,-14.346637,-3.2460543
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,gaussian_noise,0.2,-8.851839,-14.350905,-4.1658264
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,gaussian_noise,0.35,1.1586762,0.15039021,2.2731518
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,gaussian_noise,0.35,-1.8490334,-7.0238402,1.9316137
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,gaussian_noise,0.35,-0.22587342,-2.0339685,1.3334773
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,gaussian_noise,0.35,-1.2411506,-3.088919,0.59886341
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,gaussian_noise,0.35,-12.785736,-20.048897,-6.366572
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,gaussian_noise,0.35,-18.652267,-24.44202,-13.306419
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,gaussian_noise,0.35,-19.065001,-25.419978,-13.516419
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,gaussian_noise,0.35,-17.251233,-23.108344,-12.191984
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,rotation_with_outage,0,1.1529539,-0.47690796,3.0821511
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,rotation_with_outage,0,-0.33610356,-1.9333724,1.0637842
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,rotation_with_outage,0,0.89586331,-0.54279213,2.2344598
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,rotation_with_outage,0,2.5799752,0.7352218,4.5901913
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,rotation_with_outage,0,7.5372497,1.5597981,15.252498
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,rotation_with_outage,0,6.1234454,3.2435913,10.089458
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,rotation_with_outage,0,5.4864099,1.8376677,9.6259838
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,rotation_with_outage,0,6.9016439,4.1278561,9.8671471
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,rotation_with_outage,15,1.4221466,-1.0016378,4.2307915
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,rotation_with_outage,15,-2.673947,-7.6702909,0.85619364
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,rotation_with_outage,15,1.1037569,-2.0482937,3.766454
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,rotation_with_outage,15,3.3907964,0.16912592,6.6178139
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,rotation_with_outage,15,8.2997724,0.48384676,17.486175
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,rotation_with_outage,15,7.3492868,2.5546813,13.603342
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,rotation_with_outage,15,6.9173522,1.2262379,14.602818
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,rotation_with_outage,15,8.8050759,2.1029101,16.633354
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,rotation_with_outage,30,1.1116822,-0.34764266,3.0268941
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,rotation_with_outage,30,-0.2215624,-3.9468877,4.1567547
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,rotation_with_outage,30,3.5072071,0.94354942,6.1639473
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,rotation_with_outage,30,7.2298762,3.8321868,10.991522
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,rotation_with_outage,30,15.18166,5.2309618,26.901518
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,rotation_with_outage,30,16.573517,10.086609,24.418868
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,rotation_with_outage,30,18.006347,10.253892,28.412779
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,rotation_with_outage,30,19.848031,13.435719,28.396904
+pamap2,clean,geometry_axes,Original-axis features,1,42,8,8,rotation_with_outage,60,1.6606597,-0.49525522,3.1780522
+pamap2,clean,geometry_mlp,Geometry · MLP readouts,1,42,8,8,rotation_with_outage,60,4.6736503,1.2113502,8.092884
+pamap2,clean,geometry_no_posture,Without posture head,1,42,8,8,rotation_with_outage,60,2.7278023,-0.7915298,5.8160681
+pamap2,clean,geometry_no_rotation,Without mounting augmentation,1,42,8,8,rotation_with_outage,60,8.3389425,4.6587709,11.341518
+pamap2,clean,temporal_cnn,Temporal CNN,1,42,8,8,rotation_with_outage,60,30.751078,19.564065,41.199895
+pamap2,clean,kan_har,KAN-HAR,1,42,8,8,rotation_with_outage,60,32.919496,25.802112,39.347626
+pamap2,clean,kan_fe,RL-KAN feature extractor,1,42,8,8,rotation_with_outage,60,36.826842,27.968718,45.485771
+pamap2,clean,kan_mixer,KAN–MLP–Mixer,1,42,8,8,rotation_with_outage,60,34.374582,28.360562,40.457727
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,sample_gap,0,-0.28540246,-0.69888182,0.087688664
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,sample_gap,0,1.094282,-0.066558413,2.4209338
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,sample_gap,0,0.97532004,0.34989182,1.7328163
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,sample_gap,0,1.79125,-0.054506578,3.8553761
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,sample_gap,0,0.73445518,-0.20792893,1.7187826
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,sample_gap,0,6.0377533,3.3609122,9.0448763
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,sample_gap,0,1.2498817,-0.23001837,2.8499641
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,sample_gap,0,1.1541734,-0.7326687,3.1487025
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,sample_gap,8,-0.4308409,-0.86033149,-0.026706927
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,sample_gap,8,0.93105327,-0.22410424,2.2650003
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,sample_gap,8,0.9508568,0.32545518,1.6942008
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,sample_gap,8,1.6051018,-0.19187107,3.5965054
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,sample_gap,8,0.60548938,-0.30251842,1.5628184
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,sample_gap,8,5.8043538,3.0976875,8.8175447
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,sample_gap,8,0.89389522,-0.72074741,2.6063936
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,sample_gap,8,0.92461908,-0.9353422,2.8827115
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,sample_gap,16,-0.54386349,-0.93047961,-0.1384004
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,sample_gap,16,1.0756766,-0.082267645,2.3495908
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,sample_gap,16,0.7923554,0.14524726,1.5833073
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,sample_gap,16,1.5174726,-0.3157213,3.4406391
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,sample_gap,16,0.12881043,-0.89551576,1.1407607
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,sample_gap,16,6.7237497,4.1398066,9.5493494
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,sample_gap,16,0.99080371,-0.56434725,2.6869138
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,sample_gap,16,0.85700562,-0.90292821,2.7475558
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,sample_gap,32,-0.60622712,-0.96530665,-0.18146241
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,sample_gap,32,0.99612403,-0.23028555,2.3523249
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,sample_gap,32,0.9053081,0.11378841,1.8345726
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,sample_gap,32,1.9274978,0.078813647,3.8515877
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,sample_gap,32,-0.52231838,-1.76287,0.68014702
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,sample_gap,32,8.0305418,5.8133734,10.538614
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,sample_gap,32,2.0303345,0.6934884,3.4947475
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,sample_gap,32,1.7393005,0.24545224,3.5565127
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,gaussian_noise,0,-0.28540246,-0.69888182,0.087688664
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,gaussian_noise,0,1.094282,-0.066558413,2.4209338
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,gaussian_noise,0,0.97532004,0.34989182,1.7328163
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,gaussian_noise,0,1.79125,-0.054506578,3.8553761
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,gaussian_noise,0,0.73445518,-0.20792893,1.7187826
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,gaussian_noise,0,6.0377533,3.3609122,9.0448763
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,gaussian_noise,0,1.2498817,-0.23001837,2.8499641
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,gaussian_noise,0,1.1541734,-0.7326687,3.1487025
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,gaussian_noise,0.05,-0.11990406,-0.70150021,0.62513028
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,gaussian_noise,0.05,0.23973524,-0.57366198,1.0435742
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,gaussian_noise,0.05,0.78399602,-0.27132894,1.8189441
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,gaussian_noise,0.05,1.3574355,0.26217479,2.8333364
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,gaussian_noise,0.05,0.41882866,-0.89979483,1.6217818
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,gaussian_noise,0.05,5.8566768,3.3199081,8.732077
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,gaussian_noise,0.05,1.0882529,-0.68617962,2.8373054
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,gaussian_noise,0.05,0.89312088,-0.66096081,2.5207191
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,gaussian_noise,0.1,-0.30091432,-0.67171827,0.006489954
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,gaussian_noise,0.1,0.44113385,-0.57007956,1.3988373
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,gaussian_noise,0.1,0.22011171,-0.54432891,0.98972807
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,gaussian_noise,0.1,1.1469314,-0.24781782,2.6840089
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,gaussian_noise,0.1,-0.21764021,-1.5234909,0.84796706
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,gaussian_noise,0.1,5.6234167,2.8329819,8.7041093
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,gaussian_noise,0.1,0.9343622,-0.84615302,2.557369
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,gaussian_noise,0.1,0.74494426,-0.8699087,2.3912344
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,gaussian_noise,0.2,-0.16339961,-0.41052546,0.060415073
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,gaussian_noise,0.2,1.5684396,0.39070447,2.9411941
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,gaussian_noise,0.2,0.40800812,-0.430417,1.1641389
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,gaussian_noise,0.2,1.2963926,0.36841186,2.4381375
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,gaussian_noise,0.2,0.28081605,-0.97267778,1.3767997
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,gaussian_noise,0.2,8.361487,5.5909014,11.393501
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,gaussian_noise,0.2,5.8710255,3.0724286,8.7544429
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,gaussian_noise,0.2,3.7444646,1.8205766,5.849295
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,gaussian_noise,0.35,-0.35874963,-0.74026248,0.013347736
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,gaussian_noise,0.35,1.7980863,0.4803367,3.3817984
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,gaussian_noise,0.35,0.57413155,-0.25493358,1.4226643
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,gaussian_noise,0.35,1.3721743,0.46369565,2.4658481
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,gaussian_noise,0.35,4.5649099,2.7388785,6.2191344
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,gaussian_noise,0.35,26.804768,23.597938,29.6554
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,gaussian_noise,0.35,24.618667,21.841774,27.228996
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,gaussian_noise,0.35,17.037676,13.294728,20.761091
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,rotation_with_outage,0,-0.097373721,-1.4780667,1.3674772
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,rotation_with_outage,0,-0.1839656,-2.4814841,1.9184798
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,rotation_with_outage,0,-1.3491446,-4.0078907,1.3756609
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,rotation_with_outage,0,-0.31134302,-2.7548792,1.8606766
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,rotation_with_outage,0,-1.7624422,-3.4350474,-0.33660515
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,rotation_with_outage,0,7.9183188,4.6618661,11.229972
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,rotation_with_outage,0,2.6479533,0.45199232,5.1567765
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,rotation_with_outage,0,0.49234787,-2.2107043,3.2621895
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,rotation_with_outage,15,0.76977549,-0.89609337,2.6116212
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,rotation_with_outage,15,0.5601882,-1.829594,2.9233206
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,rotation_with_outage,15,1.0380396,-1.0334187,3.2952914
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,rotation_with_outage,15,2.9732226,0.16448809,5.8663717
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,rotation_with_outage,15,-0.24771049,-2.9011697,2.3546044
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,rotation_with_outage,15,10.555093,7.5437382,13.670134
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,rotation_with_outage,15,3.7934889,0.74237414,7.0750392
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,rotation_with_outage,15,1.8634194,-0.63116682,4.4715752
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,rotation_with_outage,30,0.50548699,-0.68908668,1.9126523
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,rotation_with_outage,30,0.66556849,-1.4948009,3.0374122
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,rotation_with_outage,30,2.6227757,0.11741551,5.4568001
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,rotation_with_outage,30,6.3856486,2.875276,10.170479
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,rotation_with_outage,30,0.87486731,-2.0272659,3.6174897
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,rotation_with_outage,30,16.521367,13.059222,20.725775
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,rotation_with_outage,30,8.5002468,4.8988266,12.192331
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,rotation_with_outage,30,5.8940682,3.2531592,9.0828617
+selfback,clean,geometry_axes,Original-axis features,1,42,5,33,rotation_with_outage,60,-0.83149766,-2.606225,0.81111391
+selfback,clean,geometry_mlp,Geometry · MLP readouts,1,42,5,33,rotation_with_outage,60,-2.098449,-5.2225768,1.1079943
+selfback,clean,geometry_no_posture,Without posture head,1,42,5,33,rotation_with_outage,60,-1.15326,-3.7424594,1.4929023
+selfback,clean,geometry_no_rotation,Without mounting augmentation,1,42,5,33,rotation_with_outage,60,4.4291924,1.4510887,7.589198
+selfback,clean,temporal_cnn,Temporal CNN,1,42,5,33,rotation_with_outage,60,3.3994335,-0.53274494,7.1034115
+selfback,clean,kan_har,KAN-HAR,1,42,5,33,rotation_with_outage,60,16.602871,13.048455,20.243869
+selfback,clean,kan_fe,RL-KAN feature extractor,1,42,5,33,rotation_with_outage,60,13.220844,10.103289,16.638785
+selfback,clean,kan_mixer,KAN–MLP–Mixer,1,42,5,33,rotation_with_outage,60,12.324856,8.4859175,16.459062
