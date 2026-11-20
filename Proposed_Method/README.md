@@ -12,5 +12,3 @@ The training objective combines weighted cross-entropy with elapsed, motion, and
 | MLP readouts | Replaces the two spline projections with MLPs whose parameter counts match within 0.1% |
 | Without posture head | Removes the posture specialist and its conditional training loss |
 | Without mounting augmentation | Disables training-time mounting rotation while keeping the architecture and other augmentations |
-
-The no-posture comparison also changes capacity. See [ablation results](../Results/Ablations/Paired_Effects.csv) and [rotation-specific ablations](../Results/Ablations/Rotation_Effects.csv).
