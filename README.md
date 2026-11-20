@@ -11,27 +11,6 @@ This release contains the current wearable human activity recognition model, fou
 | [Baselines](Baselines/) | Temporal CNN, KAN-HAR, RL-KAN feature extractor, KAN–MLP–Mixer, and source-study details |
 | [Experiments](Experiments/) | Exact training plans and scripts for training, comparison, evaluation, plotting, and packaging |
 
-## Read the results
-
-The [matched benchmark](Results/Benchmark/Matched_Seeds.csv) compares all nine models under seeds 42 and 77 on participant-disjoint splits. For each model, the analysis averages each participant’s confusion matrices across training seeds, then pools those matrices to calculate macro-F1. The 95% intervals use 1,500 participant-bootstrap draws. The table also records each score’s range across seeds. The unseen-pace endpoint averages the separate slow and fast SELFBACK evaluations, each including the same six nonwalking activities.
-
-[Paired baseline effects](Results/Benchmark/Matched_Seed_Effects.csv) and [paired ablation effects](Results/Ablations/Matched_Seed_Effects.csv) use identical held-out windows. [Per-seed results](Results/Benchmark/Seed_Replicates.csv) include the additional seed-123 UCI HAR runs. The [seed-42 table](Results/Benchmark/Scores.csv) also evaluates the equal-probability average of the Geometry spline and MLP checkpoints.
-
-The [baseline notes](Baselines/README.md) describe the local implementations, source studies, and published evaluation protocols. The four composite figures cover validation curves, robustness curves, confusion matrices, and one comparative bar chart. Each figure is available as PDF, SVG, and PNG.
-
-### Stress tests and diagnostics
-
-| Experiment | Evaluation | Results |
-|---|---|---|
-| Missing samples | One gap of 0, 8, 16, or 32 samples in a 128-sample window, replaced by linear interpolation across its endpoints | [Severity estimates](Results/Robustness/Stress_Sweeps.csv) |
-| Gaussian sensor noise | Noise from 0 to 0.35 times each channel’s training-fold standard deviation | [Severity estimates](Results/Robustness/Stress_Sweeps.csv) |
-| Rotation with sensor loss | One fixed sensor group is dropped per participant and replaced with training channel means. Remaining sensors rotate by 0°, 15°, 30°, or 60° | [Paired comparisons](Results/Robustness/Stress_Paired_Effects.csv) |
-| Recorded walking pace | SELFBACK slow, medium, and fast walking, including recall and errors into jogging | [Pace estimates](Results/Robustness/Matched_Pace.csv) |
-| Confidence | Top-label ECE, Brier score, and accepted error across six confidence thresholds | [Calibration](Results/Diagnostics/Calibration.csv), [risk and coverage](Results/Diagnostics/Risk_Coverage.csv) |
-| Activity-level errors | Per-activity precision, recall, and F1 pooled across seeds and at peak stress | [Matched class scores](Results/Diagnostics/Matched_Per_Class.csv), [stress class scores](Results/Diagnostics/Stress_Per_Class.csv), [confusions](Results/Diagnostics/Matched_Confusions.csv) |
-| Stability | Held-out participant score distributions and prediction agreement across training seeds | [Participant distributions](Results/Diagnostics/Participant_Variability.csv), [seed agreement](Results/Diagnostics/Seed_Agreement.csv) |
-
-The severity sweeps use seed 42 for all nine models, sharing the perturbations on the same held-out windows in each fold. The sensor group is one IMU on PAMAP2 and one three-axis signal on UCI HAR and SELFBACK. At 0° in the joint sweep, the sensor outage still applies. The [rotation and outage contrasts](Results/Robustness/Rotation_Outage_Interaction.csv) compare the two individual perturbations, their combination, and their shared clean reference. The noise and gap sweeps include a clean zero-severity control. The confidence analysis uses the stored eight-bit top-label probabilities and ten equal-width bins. For unseen pace, the confidence union counts the shared nonwalking windows once.
 
 ## Run locally
 
