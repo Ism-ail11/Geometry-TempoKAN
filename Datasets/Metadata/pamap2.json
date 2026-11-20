@@ -1,0 +1,41 @@
+{
+  "dataset": "pamap2",
+  "citation_doi": "10.24432/C5NW2H",
+  "archive_sha256": "76b3580bd5a804121f507717cb498c66a312ef5c774f4a78ac470e6558add352",
+  "archive_bytes": 688226940,
+  "cache_version": 1,
+  "source_url": "https://archive.ics.uci.edu/static/public/231/pamap2%2Bphysical%2Bactivity%2Bmonitoring.zip",
+  "shape": [
+    14904,
+    128,
+    18
+  ],
+  "sample_rate": 50,
+  "window_samples": 128,
+  "stride_samples": 64,
+  "subjects": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+  ],
+  "classes": {
+    "Lying": 1490,
+    "Sitting": 1424,
+    "Standing": 1449,
+    "Walking": 1839,
+    "Running": 759,
+    "Cycling": 1277,
+    "Nordic walking": 1460,
+    "Upstairs": 892,
+    "Downstairs": 794,
+    "Vacuum cleaning": 1357,
+    "Ironing": 1840,
+    "Rope jumping": 323
+  },
+  "pace_counts": {}
+}
